@@ -167,5 +167,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
+# Face Unlock enable
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Call the proprietary setup
 $(call inherit-product, vendor/google/seed/seed-vendor.mk)
